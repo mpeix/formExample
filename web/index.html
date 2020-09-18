@@ -1,0 +1,58 @@
+<!doctype html>
+    <html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no">
+        <meta name="description" content="Formulario en HTLM5 con validaciones"/>
+        <title>Ejemplo de formulario en HTLM5 con validaciones</title>
+
+        <link href="./assets/styles/main.css" rel="stylesheet" />
+    </head>                
+    <body>
+        <header>
+            <h1>Ejemplo formulario</h1>
+        </header>
+        <main id="box-container">
+            <form id="main-form">
+                <div class="form-item">
+                    <label for="name">Nombre</label>
+                    <input type="text" id="name" name="name" placeholder="Escribe el nombre"  required maxlength="10">
+                </div>
+                <div class="form-item">
+                    <label for="surname">Apellidos</label>
+                    <input type="text" id="surname" name="surname" placeholder="Escribe los apellidos" required maxlength="10">
+                </div>
+                <div class="form-item">
+                    <label for="phone">Teléfono</label>
+                    <input type="number" id="phone" name="telefono" placeholder="Introduce el número"  >
+                </div>
+                <div class="form-item">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Introduce el correo" required>
+                </div>
+                <div class="form-item">
+                    <label for="gender">Género</label>
+                    <select name="gender" id="gender">
+                        <option value="m">Masculino</option>
+                        <option value="f">Femenino</option>
+                    </select>
+                </div>
+                <div class="form-item-save">
+                    <input type="submit" value="Guardar">
+                    <span id="datos-ok">Datos enviados</span>
+                </div>
+            </form>
+        </main>
+        <footer>
+            <div>
+                To view more example projects vist:&nbsp; 
+            </div>
+            <div>
+                <a href="https://github.com/mpeix" target="_blank">
+                    <img id="gitub-img" src="./assets/images/GitHub-Mark-32px.png" />
+                </a>
+            </div>
+        </footer>
+        <script type="text/javascript" src="./assets/scripts/main.js"></script>
+    </body>
+</html>

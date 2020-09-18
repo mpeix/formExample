@@ -1,0 +1,157 @@
+html{
+    width: 100%;
+    font-size: 18px;
+}
+body{
+    width: 100%;    
+    margin: 0;
+    background-color: #007bff;
+    font-size: 12px;
+}
+
+h1{
+    text-align:center;
+    font-size: 1.5rem;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    scroll-behavior: auto;
+    padding-bottom: 100px;
+}
+
+form{
+    padding: 25px;
+    border-radius: 5px;
+    background-color: white;
+    font-size: 1.1rem;
+    box-shadow: 1px 1px #D8D8D8;
+}
+
+.form-item{
+    display: flex;
+    flex-direction: column;
+}
+.form-item label{
+    margin-top: 10px;
+    font-weight: bold;
+}
+.form-item input, .form-item select, .form-item-save input{
+    margin-top: 5px;
+    border: 2px solid #E8E8E8;
+    height: 25px;
+    font-size: 1.01rem;
+    border-radius: 5px;
+    padding: 5px;
+}
+.form-item input::placeholder{
+    color:#D8D8D8;
+}
+
+.form-item input[type=email]{
+    background-image: url('../images/mail.svg');
+    background-repeat: no-repeat;
+    padding-left: 30px;
+    background-position: 5px;
+}
+
+.form-item select{
+    width: fit-content;
+    height: fit-content;
+}
+
+
+
+/* Hide arrows for input type number */
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.error-text{
+    font-size: 0.70rem;
+    text-align: right;
+    color: #dc3545;
+}
+
+.form-item-save{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.form-item-save input[type=submit]{
+    width: fit-content;
+    height: fit-content;
+    background-color: #20c997;
+    margin-top: 15px;
+    padding: 8px;
+    border: 1px solid #28a745;
+    color: #ffffff;
+}
+.form-item-save input[type=submit]:hover{
+    box-shadow: 1px 1px #28a745;
+    cursor: pointer;
+}
+
+#datos-ok{
+    background-image: url('../images/check.svg');
+    background-repeat: no-repeat;
+    background-position: left;
+    padding-left: 25px;
+    margin-top: 15px;
+    margin-left: 5px;
+    display: none;
+    font-style: italic;
+}
+
+footer{
+    height: 50px;
+    background-color: antiquewhite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    position: fixed;
+    width: 100vw;
+    bottom: 0;
+    font-size: 1.1rem;
+}
+#github-img{
+    max-width: 25px;   
+}
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 400px) { 
+    #main-form{
+        min-width: 350px;
+    }
+}
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) { 
+    #main-form{
+        min-width: 400px;
+    }
+}
+
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) { 
+    #main-form{
+        min-width: 500px;
+    }
+}
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) { 
+  
+}
+
+/*Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) { 
+      
+}
